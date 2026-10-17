@@ -1,11 +1,14 @@
 import numpy as np
 import matplotlib.pyplot as aaa_plt
 
-def main():
-    x = np.linspace(0, 10, 100)
-    y = np.sin(x)
-    aaa_plt.plot(x, y)
+def plot_data(x, y):
+    aaa_plt.scatter(x, y)
     aaa_plt.show()
+
+def main():
+    x = np.array([1, 2, 3, 4, 5])
+    y = np.array([1, 2, 3, 4, 5])
+    plot_data(x, y)
 
 if __name__ == "__main__":
     main()
